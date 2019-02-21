@@ -13,8 +13,8 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,7 +106,16 @@
     \newline
     Programming on embedded systems, asynchronous or event-based.
     }
-\section{Notable projects}
+\section{Notable free software projects}
+\cvitem{typedload}{
+    A library to load json data into Python typed data structures.
+    \newline
+    It is used to enable mypy to statically check code which loads data into
+    dynamic datatypes (list, dictionary) making sure it conforms to certain
+    static types instead.
+    \newline
+    \url{https://github.com/ltworf/typedload}
+    }
 \cvitem{Relational}{
     Relational, a relational algebra parser/compiler/optimizer, used in academia and as educational tool. Implemented in Python
     \newline
@@ -135,15 +144,19 @@
 
 \cventry{2016-}
     {Software developer}
-    {Cyxtera/Cryptzone}
+    {Cyxtera}
     {G\"{o}teborg, Sweden}
     {}
     {
-        The product I work on, is a vpn solution that comes with advanced
+        The product I work on, is a VPN solution that comes with advanced
         permissions. The solution includes clients, and an appliance.
         \newline
-        My role was mostly back-end development for the appliance, and some
-        work on the Linux version of the client.
+        The product runs on a custom Ubuntu based distribution, on which I work
+        on. There is a daemon in charge of converting user settings to
+        configuration and I work on that too.
+        \newline
+        I also do general back-end work for the internal testing solutions
+        and for the linux clients.
     }
 
 \cventry{2014-2015}
@@ -187,6 +200,7 @@
 \cvitemwithcomment{Italian}{Mothertongue}{}
 \cvitemwithcomment{English}{Fluent}{}
 \cvitemwithcomment{French}{Basic}{}
+\cvitemwithcomment{Swedish}{Very basic}{}
 
 
 \section{Interests}
@@ -205,17 +219,17 @@
 % To remove the cover letter, comment out this entire block
 
 % \clearpage
-% 
+%
 % \recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
 % \date{\today} % Letter date
 % \opening{Dear Sir or Madam,} % Opening greeting
 % \closing{Sincerely yours,} % Closing phrase
 % \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-% 
+%
 % \makelettertitle % Print letter title
-% 
+%
 % \lipsum[1-3] % Dummy text
-% 
+%
 % \makeletterclosing % Print letter signature
 
 %----------------------------------------------------------------------------------------
